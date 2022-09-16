@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #15191c;
+}
+
+/* Navbar Left Signature*/
+
+.navbar-signature {
+    overflow: hidden;
+    background-color: transparent;
+    top: 0;
+    width: 100%;
+  }
+  
+  .navbar-signature a {
+    float: left;
+    color: #00bbff;
+    text-align: center;
+    margin: 30px 5%;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 300ms;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+
+/* Introduction */
+
+.introduction {
+    margin-top: 5%;
+    font-size: 20px;
+    color: #fff;
+    justify-content: center;
+    text-align: center;
+}
+
+.introduction p {
+    margin-block-end: -5px;
+    margin-block-start: -5px;
+}
+
+input[type="button"] {
+    border-radius: 20px;
+    width: 155px;
+    height: 50px;
+    margin-top: 25%;
+}
+
+input[value="About me"] {
+    color:#00bbff;
+    font-size: 20px;
+}
+
+input[value="Download CV"] {
+    color: #15191c;
+    font-size: 20px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+}
+
+#cv {
+    background-color: #00bbff;
+    border: solid 3px #00bbff;
+    margin-left: 10px;
+    transition: 200ms;
+}
+
+#cv:hover {
+    cursor: pointer;
+    background-color: transparent;
+    color: #00bbff;
+    transform: scale(1.05);
+}
+
+#aboutme {
+    border: solid 3px #00bbff;
+    background-color: transparent;
+    margin-right: 10px;
+    transition: 200ms;
+}
+
+#aboutme:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    color: #15191c;
+    background-color: #00bbff;
+}
+
+/* Media */
+
+.media {
+    margin-top: 5%;
+    font-size: 35px;
+    color: rgb(0, 187, 255);
+}
+
+.media ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 0;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.media ul li {
+    list-style: none;
+}
+
+.media ul li a:visited{
+    color: #00BBFF;
+}
+
+#portrait {
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    height: 500px;
+    width: 290px;
+    background-image: linear-gradient(to top, #15191c, #223d4d, #286484, #238ec0, #00bbff);
+}
+
+#media-icons {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#media-icons i {
+    transition: 200ms;
+}
+
+#media-icons i:hover {
+    cursor: pointer;
+    color: #fff;
+}
+
+/* Projects */
+
+.about {
+    color:#ffffff;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 25px;
+    position: relative;
+    top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    max-width: 60%;
+    height: 550px;
+    background-color: #1c2125;
+}
+
+.about ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: -50px;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.about ul li {
+    list-style: none;
+    width: 30%;
+    border-radius: 25px;
+    height: 180px;
+    background-color: #2a3137;
+}
+
+.about ul li p{
+    color: #00bbff;
+}
+
+.bio {
+    text-align: left;
+    padding-top: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 25px;
+    margin: 0 auto;
+    width: 87.1%;
+    height: 200px;
+    background-color: #2a3137;
+}
+
+/* Footer */
+
+.footer{
+    position: relative;
+    margin-top: 300px;
+    background-color: #00BBFF;
+    height: 400px;
+    width: 100%;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+.footer-content ul {
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    padding-left: 0px;
+    justify-content: space-evenly;
+    padding-left: 0px;
+}
+
+.footer-content ul li {
+    list-style: none;
+    margin-top: 50px;
+}
+
+#mail {
+    width: 260px;
+}
+#bottomtext{
+    position: absolute;
+    bottom: 0px;
+    left: 50%; 
+    transform: translate(-50%, 0%);
+} 
+
+#bottomtext i{
+    color: red;
+}
+
+.mediafooter {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.mediafooter i {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    transition: 200ms;
+}
+
+.mediafooter a:visited {
+    color: #15191c;
+}
+
+.mediafooter i:hover {
+    cursor: pointer;
+    transform: scale(1.10);
+    color: #002f41;
+}
+
+
+/* MISC */
+
+span{
+    color: #00bbff;
+}
+
+.floated {
+    float: left;
+    margin-right:5px;
+}
+
+.fa-brands, .fab {
+    font-weight: 400;
+    margin-bottom: 90%;
+}
+
+::-webkit-scrollbar {
+    width: 0.5em;
+}
+::-webkit-scrollbar {
+    width: 5px!important;
+    background-color: transparent!important;
+}
+::-webkit-scrollbar-thumb {
+    background: #00bbff;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px!important;
+    height: 20px!important;
+    background-color: #00bbff!important;
+    background-image: -webkit-linear-gradient(90deg,transparent,rgba(0,0,0,.4) 50%,transparent,transparent)!important;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-track {
+    border-radius: 10px!important;
+    background-color: transparent!important;
+}
+
+/* Shapetop */
+#shapetop {
+    position: absolute;
+    margin-top: 305px;
+    background-color: #15191c;
+    height: 0px;
+    width: 100%;
+}
+/* Shape divider */
+
+.custom-shape-divider-bottom-1663103243 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1663103243 svg {
+    position: relative;
+    display: block;
+    width: calc(110% + 1.3px);
+    height: 113px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1663103243 .shape-fill {
+    fill: #00BBFF;
+}
+
+/* Queries */
+
+@media only screen and (max-width: 480px){
+    .about {
+        max-width: 80%;
+        height: 1075px;
+    }
+    .about ul li {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    .bio {
+        height: 365px;
+        font-size: 4.2vw;
+    }
+}

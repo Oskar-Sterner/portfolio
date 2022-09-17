@@ -8,6 +8,9 @@
     <title>Portfolio</title>
 </head>
 <body>
+    <div id="spinner-wrapper">
+        <div class="spinner"></div>
+    </div>
 
 <div class="navbar-signature">
     <a>O S O D Y</a>
@@ -105,5 +108,16 @@
         <p>Made with <i class="fa-solid fa-heart"></i> by Oskar Sterner</p>
     </div>
 </div>
+<script>
+    var a = document.getElementById("spinner-wrapper");
+    window.onload = function() {
+        hidden();
+    }
+
+    function hidden(){
+        a.classList.add("hidden");
+    }
+</script>
 </body>
+
 </html>

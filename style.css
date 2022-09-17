@@ -335,17 +335,95 @@ span{
 
 /* Queries */
 
-@media only screen and (max-width: 480px){
-    .about {
-        max-width: 80%;
-        height: 1075px;
-    }
-    .about ul li {
-        width: 100%;
-        margin-bottom: 5%;
-    }
+@media only screen and (max-width: 1436px){
     .bio {
-        height: 365px;
-        font-size: 4.2vw;
+        height: 235px;
     }
 }
+
+@media only screen and (max-width: 1155px){
+    .about ul li {
+        height: 205px;
+    }
+
+    .about {
+        height: 585px;
+    }
+}
+
+@media only screen and (max-width: 1038px){
+    .about ul li {
+        margin-left: -28px;
+        margin-right: -28px;
+    }
+
+    .about {
+        max-width: 70%;
+    }
+}
+
+@media only screen and (max-width: 904px){
+    .about ul li {  
+        width: 35%;
+    }
+
+    .bio {
+        height: 255px;
+    }
+
+    .about {
+        height: 595px;
+    }
+}
+
+@media only screen and (max-width: 784px){
+    .about {
+        max-width: 80%;
+    }
+}
+
+@media only screen and (max-width: 685px){
+    .about ul li {
+        width: 80%;
+        margin-bottom: 5%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    
+    .about ul {
+        justify-content: center;
+    }
+
+    .about {
+        height: 1083px;
+    }
+
+    .bio {
+        height: 275px;
+    }
+}
+
+@media only screen and (max-width: 568px){
+    .bio {
+        height: 325px;
+    }
+
+    .about {
+        height: 1130px;
+    }
+
+    .about ul li {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 496px){
+    .bio {
+        height: 345px;
+    }
+
+    .about {
+        height: 1130px;
+    }
+}
+

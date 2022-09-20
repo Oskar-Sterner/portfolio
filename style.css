@@ -113,7 +113,19 @@ input[value="Download CV"] {
     list-style: none;
 }
 
+.media ul li a{
+    transition: 200ms;
+}
+
+.media ul li a:hover{
+    transform: rotate(30);
+}
+
 .media ul li a:visited{
+    color: #00BBFF;
+}
+
+.fa-brands:before {
     color: #00BBFF;
 }
 
@@ -134,13 +146,8 @@ input[value="Download CV"] {
     flex-direction: column;
 }
 
-#media-icons i {
+#media-icons li a{
     transition: 200ms;
-}
-
-#media-icons i:hover {
-    cursor: pointer;
-    color: #fff;
 }
 
 /* Projects */
@@ -254,6 +261,10 @@ input[value="Download CV"] {
     color: #15191c;
 }
 
+.mediafooter a .fa-brands:before {
+    color: #15191c;
+}
+
 .mediafooter i:hover {
     cursor: pointer;
     transform: scale(1.10);
@@ -331,6 +342,30 @@ span{
 
 .custom-shape-divider-bottom-1663103243 .shape-fill {
     fill: #00BBFF;
+}
+
+/* Title */
+
+[data-title]:hover:after {
+    opacity: 1;
+    transition: all 0.1s ease 0.5s;
+    visibility: visible;
+}
+[data-title]:after {
+    content: attr(data-title);
+    background-color: transparent;
+    color: #00BBFF;
+    font-size: 50%;
+    font-weight: 600;
+    position: absolute;
+    padding: 5px;
+    bottom: 100%;
+    opacity: 0;
+    z-index: 99999;
+    visibility: hidden;
+}
+[data-title] {
+    position: relative;
 }
 
 /* Preloader */
@@ -474,4 +509,3 @@ span{
         height: 1130px;
     }
 }
-

@@ -117,6 +117,10 @@ input[value="Download CV"] {
     color: #00BBFF;
 }
 
+.fa-brands:before {
+    color: #00BBFF;
+}
+
 #portrait {
     border-top-left-radius: 200px;
     border-top-right-radius: 200px;
@@ -251,6 +255,10 @@ input[value="Download CV"] {
 }
 
 .mediafooter a:visited {
+    color: #15191c;
+}
+
+.mediafooter a .fa-brands:before {
     color: #15191c;
 }
 

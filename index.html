@@ -4,17 +4,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/62ffc96575.js" crossorigin="anonymous"></script>
-    
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/icon.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+    <link rel="newest stylesheet" href="style.css">
     <title>Portfolio</title>
 </head>
 <body>
+
     <div id="spinner-wrapper">
         <div class="spinner"></div>
     </div>
 
 <div class="navbar-signature">
-    <a>O S O D Y</a>
+    <a >O S O D Y</a>
 </div>
 
 <div class="introduction">
@@ -22,10 +27,37 @@
     <h1>Oskar Sterner</h1>
     <p>Frontend <span>Developer</span></p>
     <div class="buttons">
-        <input type="button" class="floated" id="aboutme" value="About me">
-        <input type="button" class="floated" id="cv" value="Download CV">
+        <input type="button" class="floated" id="aboutme" value="About me" onclick="location.href='#about';">
+        <input type="button" class="floated" id="cv" value="View CV" data-bs-toggle="modal" data-bs-target="#exampleModal">
+
     </div>
 </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">CV</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <iframe
+            src="https://drive.google.com/file/d/1yIP-Ny6WLhEKfY5QeHLcmUSgCF-6IrhL/preview#toolbar=0&scrollbar=0"
+            frameBorder="0"
+            scrolling="auto"
+            height="100%"
+            width="100%"
+        ></iframe>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button onclick=" window.open('https://drive.google.com/file/d/1yIP-Ny6WLhEKfY5QeHLcmUSgCF-6IrhL/view?usp=sharing','_blank')" type="button" class="btn btn-primary">View full</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 <div class="media">
     <ul>
@@ -43,7 +75,7 @@
     </ul>
 </div>
 
-<div class="about">
+<div id="about">
     <h1>About me</h1>
     <ul>
         <li>
@@ -96,7 +128,7 @@
                     <a href="https://steamcommunity.com/id/tragiskt/" title="Steam" target="_blank"><i class="fa-brands fa-steam-symbol"></i></a>
                 </div>
             </li>
-            <li><img src="images/osody.png" style="width: 50%; margin-top: 2%; margin-left: 5%;"></img></li>
+            <li><img src="images/osody.png" style="max-width: 50%; margin-top: 2%; margin-left: 5%;"></img></li>
             <li>
                 <h2>Contact</h2>
                 <p></p>

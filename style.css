@@ -1,4 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+html, body {
+    overflow-x: hidden
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+a:not([href]):not([class]), a:not([href]):not([class]):hover {
+    color: #00bbff;
+    text-decoration: none;
+}
+
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -152,7 +165,7 @@ input[value="Download CV"] {
 
 /* Projects */
 
-.about {
+#about {
     color:#ffffff;
     font-size: 20px;
     text-align: center;
@@ -167,25 +180,31 @@ input[value="Download CV"] {
     background-color: #1c2125;
 }
 
-.about ul {
+#about h1 {
+    margin-top: 10px;
+}
+
+#about ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: -50px;
+    margin-top: -35px;
     padding-top: 50px;
     padding-left: 50px;
     padding-right: 50px;
 }
 
-.about ul li {
+#about ul li {
     list-style: none;
     width: 30%;
+    padding-top: 20px;
     border-radius: 25px;
+    margin-bottom: 20px;
     height: 180px;
     background-color: #2a3137;
 }
 
-.about ul li p{
+#about ul li p{
     color: #00bbff;
 }
 
@@ -344,6 +363,14 @@ span{
     fill: #00BBFF;
 }
 
+/* Modal configs */
+
+.modal-content {
+    color: #fff;
+    background-color: #15191c;
+    height: 95%;
+}
+
 /* Title */
 
 [data-title]:hover:after {
@@ -418,94 +445,120 @@ span{
 
 /* Queries */
 
+@media only screen and (max-width: 1507px){
+    .bio {
+        height: 225px;
+    }
+    #about {
+        height: 570px;
+    }
+}
+
 @media only screen and (max-width: 1436px){
     .bio {
-        height: 235px;
+        height: 245px;
+    }
+    #about {
+        height: 580px;
     }
 }
 
-@media only screen and (max-width: 1155px){
-    .about ul li {
-        height: 205px;
-    }
-
-    .about {
-        height: 585px;
-    }
-}
-
-@media only screen and (max-width: 1038px){
-    .about ul li {
-        margin-left: -28px;
-        margin-right: -28px;
-    }
-
-    .about {
-        max-width: 70%;
-    }
-}
-
-@media only screen and (max-width: 904px){
-    .about ul li {  
-        width: 35%;
-    }
-
+@media only screen and (max-width: 1127px){
     .bio {
-        height: 255px;
+        height: 245px;
     }
-
-    .about {
-        height: 595px;
+    #about {
+        height: 580px;
+        max-width: 80%;
+    }
+    #about ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: -35px;
+        padding-top: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
-@media only screen and (max-width: 784px){
-    .about {
+@media only screen and (max-width: 845px){
+    .bio {
+        height: 275px;
+    }
+    #about {
+        height: 610px;
         max-width: 80%;
     }
 }
 
-@media only screen and (max-width: 685px){
-    .about ul li {
-        width: 80%;
-        margin-bottom: 5%;
-        margin-left: 0%;
-        margin-right: 0%;
-    }
-    
-    .about ul {
-        justify-content: center;
-    }
-
-    .about {
-        height: 1083px;
-    }
-
+@media only screen and (max-width: 703px){
     .bio {
-        height: 275px;
+        height: 305px;
+    }
+    #about ul li {
+        width: 70%;
+    }
+    #about {
+        height: 1070px;
+        max-width: 80%;
     }
 }
 
 @media only screen and (max-width: 568px){
     .bio {
-        height: 325px;
+        height: 395px;
     }
-
-    .about {
-        height: 1130px;
+    #about ul li {
+        width: 80%;
     }
-
-    .about ul li {
-        width: 100%;
+    #about {
+        height: 1150px;
+        max-width: 80%;
     }
 }
 
-@media only screen and (max-width: 496px){
+@media only screen and (max-width: 428px){
     .bio {
-        height: 345px;
+        height: 455px;
+        width: 100%;
+    }
+    #about ul li {
+        min-width: 100%!important;
+    }
+    #about {
+        height: 1200px;
+        min-width: 100%;
+        border-radius: 0%;
     }
 
-    .about {
-        height: 1130px;
+    *, ::after, ::before {
+        box-sizing:border-box;
+    }
+}
+
+@media only screen and (max-width: 409px){
+   #portrait {
+        width: 150px;
+        height: 300px;
+   }
+}
+
+@media only screen and (max-width: 386px){
+    .bio {
+        height: 500px;
+    }
+    #about ul li {
+        width: 90%;
+    }
+    #about {
+        height: 1250px;
+        max-width: 80%;
+    }
+}
+
+@media only screen and (max-width: 338px){
+    .bio {
+        height: 520px;
     }
 }

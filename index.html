@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,22 +7,24 @@
     <script src="https://kit.fontawesome.com/62ffc96575.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="images/icon.jpg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 
     <link rel="newest stylesheet" href="style.css">
     <title>Portfolio</title>
 </head>
 <body>
 
-    <div id="spinner-wrapper">
-        <div class="spinner"></div>
-    </div>
+<!-- Preloader, fyller ingen direkt funktion men jag tycker det ser lite coolt ut -->
+<div id="spinner-wrapper">
+    <div class="spinner"></div>
+</div>
 
 <div class="navbar-signature">
     <a >O S O D Y</a>
 </div>
 
+<!-- Introduktions-sektion med två knappar, ena öppnar en modal och ena tar en till about me sektionen -->
 <div class="introduction">
     <p>Hello! I am</p>
     <h1>Oskar Sterner</h1>
@@ -33,48 +36,48 @@
     </div>
 </div>
   
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-xl">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">CV</h5>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">CV</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- En iframe som visar mitt CV som PDF i modalen -->
+                <iframe
+                src="https://drive.google.com/file/d/1zzI1eyZ1ZvnQD_ur62_Y41QWWEdvz7vu/preview"
+                height="100%"
+                width="100%">
+                </iframe>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button onclick=" window.open('https://drive.google.com/file/d/1zzI1eyZ1ZvnQD_ur62_Y41QWWEdvz7vu/preview','_blank')" type="button" class="btn btn-primary">View full</button>
+            </div>
         </div>
-        <div class="modal-body">
-            <iframe
-            src="https://drive.google.com/file/d/1yIP-Ny6WLhEKfY5QeHLcmUSgCF-6IrhL/preview#toolbar=0&scrollbar=0"
-            frameBorder="0"
-            scrolling="auto"
-            height="100%"
-            width="100%"
-        ></iframe>
-
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button onclick=" window.open('https://drive.google.com/file/d/1yIP-Ny6WLhEKfY5QeHLcmUSgCF-6IrhL/view?usp=sharing','_blank')" type="button" class="btn btn-primary">View full</button>
-        </div>
-      </div>
     </div>
-  </div>
+</div>
 
+<!-- Välkomst-sektionen av hemsidan -->
 <div class="media">
     <ul>
-        <li id="media-icons">
+        <li class="media-icons">
             <a href="https://github.com/Oskar-Sterner" data-title="GitHub" target="_blank"><i class="fa-brands fa-github"></i></a>
             <a href="https://twitter.com/SternerOskar" data-title="Twitter" target="_blank"><i class="fa-brands fa-twitter"></i></a>
             <a href="https://www.behance.net/lifeisalie" data-title="Behance" target="_blank"><i class="fa-brands fa-square-behance"></i></a>
         </li>
-        <li id="portrait"><img src="images/chc.png" style="width: 95%; margin-top: 5%;"></li>
-        <li id="media-icons">
-            <a href="" data-title="LinkedIn" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        <li id="portrait"><img src="images/chc.png" style="width: 95%; margin-top: 5%;" alt="Body"></li>
+        <li class="media-icons">
+            <a href="https://www.linkedin.com/in/oskar-sterner-9b8669251/" data-title="LinkedIn" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
             <a href="https://discordapp.com/users/414888860527624193" data-title="Discord" target="_blank"><i class="fa-brands fa-discord"></i></a>
             <a href="https://steamcommunity.com/id/tragiskt/" data-title="Steam" target="_blank"><i class="fa-brands fa-steam-symbol"></i></a>
         </li>
     </ul>
 </div>
 
+<!-- About me sektionen av sidan -->
 <div id="about">
     <h1>About me</h1>
     <ul>
@@ -104,7 +107,7 @@
     </div>
 </div>
 
-
+<!-- Vågig divider som tillför lite design -->
 <div id="shapetop">
     <div class="custom-shape-divider-bottom-1663103243">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -114,6 +117,8 @@
         </svg>
     </div>  
 </div>
+
+<!-- Footer -->
 <div class="footer">
     <div class="footer-content">
         <ul>
@@ -122,13 +127,13 @@
                 <div class="mediafooter">
                     <a href="https://github.com/Oskar-Sterner" title="GitHub" target="_blank"><i class="fa-brands fa-github" title="GitHub"></i></a>
                     <a href="https://twitter.com/SternerOskar" title="Twitter" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="" title="LinkedIn" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.linkedin.com/in/oskar-sterner-9b8669251/" title="LinkedIn" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
                     <a href="https://discordapp.com/users/414888860527624193" title="Discord" target="_blank"><i class="fa-brands fa-discord"></i></a>
                     <a href="https://www.behance.net/lifeisalie" title="Behance" target="_blank"><i class="fa-brands fa-square-behance"></i></a>
                     <a href="https://steamcommunity.com/id/tragiskt/" title="Steam" target="_blank"><i class="fa-brands fa-steam-symbol"></i></a>
                 </div>
             </li>
-            <li><img src="images/osody.png" style="max-width: 50%; margin-top: 2%; margin-left: 5%;"></img></li>
+            <li><img src="images/osody.png" style="max-width: 50%; margin-top: 2%; margin-left: 5%;" alt="osody"></li>
             <li>
                 <h2>Contact</h2>
                 <p></p>
@@ -141,7 +146,9 @@
         <p>Made with <i class="fa-solid fa-heart"></i> by Oskar Sterner</p>
     </div>
 </div>
+
 <script>
+    /* Script som körs när sidan laddas in för att tvinga preloadern att "försvinna" */
     var a = document.getElementById("spinner-wrapper");
     window.onload = function() {
         hidden();
@@ -151,6 +158,6 @@
         a.classList.add("hidden");
     }
 </script>
-</body>
 
+</body>
 </html>

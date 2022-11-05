@@ -1,0 +1,38 @@
+@use "variables" as var;
+@use "mixins" as m;
+
+#self-media{
+    @include m.dataTitle;
+    position: relative;
+    margin-top: 100px;
+    ul{
+        column-count: 3;
+        justify-content: space-around;
+        display: flex;
+        img{
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+        }
+        #media{
+            text-align: center;
+            justify-content: space-evenly;
+            display: flex;
+            flex-direction: column;
+            .fa-brands, .fab {
+                font-size: 50px;
+                color: var.$primary;
+            }
+            a{
+                @include m.bounce;
+                transition: 300ms;
+                &:hover{
+                    -webkit-animation: bounce 1s ease;
+                    animation: bounce 1s ease;
+                    -webkit-animation-iteration-count: 1;
+                    animation-iteration-count: 1;
+                }
+            }
+        }
+    }
+}

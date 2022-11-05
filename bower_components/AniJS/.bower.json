@@ -1,0 +1,33 @@
+{
+  "name": "AniJS",
+  "version": "0.9.3",
+  "homepage": "http://anijs.github.io/",
+  "description": "A Library to Raise your Web Design without Coding.",
+  "main": "dist/anijs-min.js",
+  "keywords": [
+    "declarative",
+    "animation",
+    "css",
+    "javascript"
+  ],
+  "authors": [
+    "Dariel Noel <darielnoel@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test"
+  ],
+  "_release": "0.9.3",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.9.3",
+    "commit": "190b3504b672d59a4b721f5efc9481c26ea2147d"
+  },
+  "_source": "https://github.com/anijs/anijs.git",
+  "_target": "^0.9.3",
+  "_originalSource": "anijs",
+  "_direct": true
+}

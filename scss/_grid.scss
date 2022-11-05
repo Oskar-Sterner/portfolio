@@ -1,0 +1,36 @@
+@use "variables" as var;
+.item1 {
+    grid-area: nav;
+    height: 10vh;
+}
+
+.item2 {
+    grid-area: hero;
+    background-color: var.$bg;
+}
+
+.item3 {
+    grid-area: self-media;
+    background-color: var.$bg;
+}
+
+.item4 {
+    grid-area: about;
+    background-color: var.$bg;
+}
+
+.item5 {
+    grid-area: footer;
+    background-color: var.$bg;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template:
+        'nav nav nav nav nav nav'
+        'hero hero hero hero hero hero'
+        'self-media self-media self-media self-media self-media self-media'
+        'about about about about about about'
+        'footer footer footer footer footer footer';
+}

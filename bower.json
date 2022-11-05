@@ -1,0 +1,24 @@
+{
+  "name": "portfolio imp",
+  "authors": [
+    "Oskar Sterner <oskar.lr.sterner@gmail.com>"
+  ],
+  "description": "portfolio",
+  "main": "index.html",
+  "keywords": [
+    "portfolio"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "AniJS": "anijs#^0.9.3"
+  }
+}

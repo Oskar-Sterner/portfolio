@@ -1,0 +1,113 @@
+@use "variables" as var;
+@use "mixins" as m;
+
+@include m.tablet-screen {
+    nav{
+        margin-left: 0px!important;
+        text-align: center;
+    }
+    #footer img {
+        width: 80%;
+        margin-top: 85px;
+    }
+    #contact {
+        margin-right: 10px;
+    }
+    #about #about-panel {
+        width: 100%;
+        border-radius: 0px;
+        height: auto;
+        padding-bottom: 50px;
+        #dev {
+            width: 90%;
+            height: auto;
+        }
+        #expertise-panel {
+            margin-left: 20px;
+        }
+        #experience-panel {
+            margin-right: 20px;
+        }
+    }
+}
+
+@include m.small-tablet-screen {
+    #footer-image {
+        display: none;
+    }
+    #expertise-panel {
+        border-top-right-radius: 0px!important;
+        border-bottom-right-radius: 0px!important;
+    }
+    #projects-panel {
+        border-radius: 0px!important;
+    }
+    #experience-panel {
+        border-top-left-radius: 0px!important;
+        border-bottom-left-radius: 0px!important;
+    }
+}
+
+@include m.big-phone-screen {
+    #self-media ul {
+        column-count: 1;
+        justify-content: space-evenly;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        #media {
+            text-align: center;
+            column-count: 3;
+            flex-direction: row-reverse;
+            justify-content: space-around;
+            display: flex; 
+            margin-bottom: 25px;
+            margin-top: 25px;
+        }
+        #avatar{
+            display: flex;
+            img{
+                height: 90%;
+                width: 90%;
+                margin: 0 auto;
+            }
+        }
+    }
+    #about{
+        #about-panel{
+            ul{
+                margin-top: 10px;
+                margin: 0px auto;
+                flex-direction: column;
+                #expertise-panel {
+                    margin-top: 50px!important;
+                    margin-bottom: 50px!important;
+                    margin-left: 0px;
+                    border-top-right-radius: 25px!important;
+                    border-bottom-right-radius: 25px!important;
+                }
+                #projects-panel {
+                    border-radius: 25px!important;
+                    margin-bottom: 50px!important;
+                }
+                #experience-panel {
+                    margin-right: 0px;
+                    border-top-left-radius: 25px!important;
+                    border-bottom-left-radius: 25px!important;
+                }
+                li{
+                    margin: 0 auto!important;
+                }
+            }
+        }
+    }
+    #footer{
+        height: 650px;
+        ul{
+            flex-direction: column;
+        }
+        #contact{
+            margin: 0 auto;
+        }
+    }
+}

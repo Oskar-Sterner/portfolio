@@ -1,0 +1,151 @@
+@use "variables" as var;
+
+html, body {
+    background-color: var.$bg;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    color: var.$white;
+    scroll-behavior: smooth;
+    a, a:visited, a:hover, a:active {
+        color: inherit;
+        text-decoration: none;
+    }
+    ul{
+        list-style-type: none;
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 0px;
+    }
+}
+
+#loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #00bbff;
+    z-index: 999999;
+    color: var.$bg;
+    text-align: center;
+    font-size: 100px;
+    h1{
+        margin-top: 320px;
+    }
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 1.2s, opacity 1.2s ease;
+}
+
+span{
+    color: var.$primary;
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 0.5em;
+}
+::-webkit-scrollbar {
+    width: 5px!important;
+    background-color: transparent!important;
+}
+::-webkit-scrollbar-thumb {
+    background: #00bbff;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px!important;
+    height: 20px!important;
+    background-color: #00bbff!important;
+    background-image: -webkit-linear-gradient(90deg,transparent,rgba(0,0,0,.4) 50%,transparent,transparent)!important;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-track {
+    border-radius: 10px!important;
+    background-color: transparent!important;
+}
+
+/* Modal */
+.modal:before {
+    content: "";
+    display: none;
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+  }
+  
+  .modal.open .modal-dialog {
+    top: 50%;
+    width: 1000px;
+    height: 880px;
+    color: #000;
+  }
+  
+  .modal.open:before {
+    display: block;
+  }
+  
+  .modal-dialog {
+    background: #fefefe;
+    border: #333333 solid 1px;
+    border-radius: 5px;
+    position: fixed;
+    left: 50%;
+    top: -100%;
+    z-index: 11;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    -moz-transition: -moz-transform 0.3s ease-out;
+    -o-transition: -o-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+  }
+  .modal-body {
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    iframe{
+        margin: 0 auto;
+    }
+  }
+  .modal-header,
+  .modal-footer {
+    padding: 10px 20px;
+  }
+  .modal-header {
+    border-bottom: #eeeeee solid 1px;
+    display: flex;
+    justify-content: space-between;
+    a{
+        font-size: 35px;
+        line-height: 55px;
+        transition: 300ms;
+        &:hover{
+            color: red!important;
+            cursor: pointer;
+        }
+    }
+  }
+  .modal-header h2 {
+    font-size: 20px;
+  }
+  .modal-footer {
+    border-top: #eeeeee solid 1px;
+    text-align: right;
+  }
